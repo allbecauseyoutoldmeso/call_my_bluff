@@ -6,16 +6,16 @@ class Word
   attr_reader :spelling, :definition
 
   def initialize
-    get_valid_word
+    get_valid_spelling
   end
 
-  def get_valid_word
-    @spelling = get_word
+  def get_valid_spelling
+    @spelling = get_spelling
     get_definition_response = get_definition(spelling)
-    get_definition_response.is_a?(Net::HTTPSuccess) ? @definition = JSON.parse(get_definition_response.body)['results'][0]['lexicalEntries'][0]['entries'][0]['senses'][0]['definitions'][0] : get_valid_word
+    get_definition_response.is_a?(Net::HTTPSuccess) ? @definition = JSON.parse(get_definition_response.body)['results'][0]['lexicalEntries'][0]['entries'][0]['senses'][0]['definitions'][0] : get_valid_spelling
   end
 
-  def get_word
+  def get_spelling
     uri = URI('http://setgetgo.com/randomword/get.php?len=6')
     Net::HTTP.get(uri).downcase
   end
