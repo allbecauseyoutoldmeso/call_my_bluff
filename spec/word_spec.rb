@@ -13,4 +13,15 @@ describe Word do
     end
   end
 
+  describe 'definition' do
+    it 'returns a string' do
+      expect(word.definition).to be_a(String)
+    end
+    it 'returns a downcased string' do
+      expect(word.definition.downcase).to eq word.definition
+    end
+  end
+
+
+
 end
