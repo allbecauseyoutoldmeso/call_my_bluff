@@ -12,7 +12,7 @@ class Word
   def get_valid_spelling
     @spelling = get_spelling
     get_definition_response = get_definition(spelling)
-    get_definition_response.is_a?(Net::HTTPSuccess) ? @definition = JSON.parse(get_definition_response.body)['results'][0]['lexicalEntries'][0]['entries'][0]['senses'][0]['definitions'][0] : get_valid_spelling
+    get_definition_response.is_a?(Net::HTTPSuccess) ? @definition = JSON.parse(get_definition_response.body)['results'][0]['lexicalEntries'][0]['entries'][0]['senses'][0]['definitions'][0].downcase : get_valid_spelling
   end
 
   def get_spelling
