@@ -10,8 +10,8 @@ class Game
     @options = [correct_definition, incorrect_definition_1, incorrect_definition_2].shuffle
   end
 
-  # def guess(number)
-  #   options[number-1] == correct_definition ? 'correct!' : "wrong answer.  '#{word}' means '#{correct_defintion}'"
-  # end
+  def guess(number)
+    options[number-1] == correct_definition ? 'correct!' : "wrong answer.  '#{word}' means '#{correct_definition}'"
+  end
 
 end
