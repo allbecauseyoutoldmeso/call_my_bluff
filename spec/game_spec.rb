@@ -32,6 +32,12 @@ describe Game do
     end
   end
 
+  describe 'options' do
+    it 'returns an array of definitions in no particular order' do
+      expect(game.options).to be_a(Array)
+    end
+  end
+
 
 
 end
