@@ -11,7 +11,7 @@ class Game
   end
 
   def guess(number)
-    options[number-1] == correct_definition ? 'correct!' : "wrong answer.  '#{word}' means '#{correct_definition}'"
+    options[number-1] == correct_definition ? 'correct!' : "wrong answer. '#{word}' means '#{correct_definition}'"
   end
 
 end

@@ -38,6 +38,10 @@ describe Game do
     end
   end
 
-
+  describe 'guess' do
+    it 'returns a win or lose message' do
+      expect(['correct!', "wrong answer. 'dinghy' means 'a small boat for recreation or racing.'"]).to include(game.guess(1))
+    end
+  end
 
 end
