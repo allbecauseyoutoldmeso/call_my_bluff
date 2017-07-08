@@ -45,7 +45,7 @@ describe Game do
   end
 
   describe '#play' do
-    it 'calls guess with the selected option' do
+    it 'calls #guess with the selected option' do
       allow(game).to receive(:selection).and_return('1')
       expect(game).to receive(:guess).with('1')
       game.play
