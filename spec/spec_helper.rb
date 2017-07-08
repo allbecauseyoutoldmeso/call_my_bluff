@@ -4,12 +4,7 @@ require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
 
-AppleTree.configure do |app|
-  app.use RackSessionAccess::Middleware
-end
-
-Capybara.app = AppleTree
-
+Capybara.app = CallMyBluff
 
 
 RSpec.configure do |config|

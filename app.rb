@@ -6,8 +6,7 @@ class CallMyBluff < Sinatra::Base
   enable :sessions
 
   get '/' do
-    'call my bluff'
-    # erb :index
+    erb :index
   end
 
   run! if app_file == $0
