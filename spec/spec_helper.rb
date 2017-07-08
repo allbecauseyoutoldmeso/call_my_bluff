@@ -6,7 +6,6 @@ require 'rspec'
 
 Capybara.app = CallMyBluff
 
-
 RSpec.configure do |config|
 
   config.formatter = 'documentation'
