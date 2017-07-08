@@ -20,18 +20,6 @@ describe Game do
     end
   end
 
-  describe '#incorrect_definition_1' do
-    it 'returns an incorrect definition' do
-      expect(game.incorrect_definition_1).to eq 'attempting stylish elegance.'
-    end
-  end
-
-  describe '#incorrect_definition_2' do
-    it 'returns an incorrect definition' do
-      expect(game.incorrect_definition_2).to eq 'a cup from which tea is drunk.'
-    end
-  end
-
   describe '#options' do
     it 'returns an array of definitions in no particular order' do
       expect(game.options).to be_a(Array)
