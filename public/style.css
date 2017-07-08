@@ -1,0 +1,10 @@
+body {
+  background-color: #3399ff;
+  color: #FCFBE3;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-align: center;
+}
+
+#title {
+  font-size: 50px;
+}
