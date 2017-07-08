@@ -20,8 +20,11 @@ class Game
 
   def play
     puts list_options
-    selection = gets.chomp
     puts guess(selection)
+  end
+
+  def selection
+    gets.chomp
   end
 
 end

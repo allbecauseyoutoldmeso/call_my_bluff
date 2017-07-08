@@ -8,39 +8,47 @@ describe Game do
 
   subject(:game) { described_class.new(word_1, word_2, word_3) }
 
-  describe 'word' do
+  describe '#word' do
     it 'returns the game word' do
       expect(game.word).to eq 'dinghy'
     end
   end
 
-  describe 'correct_definition' do
+  describe '#correct_definition' do
     it 'returns the definition of the game word' do
       expect(game.correct_definition).to eq 'a small boat for recreation or racing.'
     end
   end
 
-  describe 'incorrect_definition_1' do
+  describe '#incorrect_definition_1' do
     it 'returns an incorrect definition' do
       expect(game.incorrect_definition_1).to eq 'attempting stylish elegance.'
     end
   end
 
-  describe 'incorrect_definition_2' do
+  describe '#incorrect_definition_2' do
     it 'returns an incorrect definition' do
       expect(game.incorrect_definition_2).to eq 'a cup from which tea is drunk.'
     end
   end
 
-  describe 'options' do
+  describe '#options' do
     it 'returns an array of definitions in no particular order' do
       expect(game.options).to be_a(Array)
     end
   end
 
-  describe 'guess' do
+  describe '#guess' do
     it 'returns a win or lose message' do
       expect(['correct!', "wrong answer. 'dinghy' means 'a small boat for recreation or racing.'"]).to include(game.guess(1))
+    end
+  end
+
+  describe '#play' do
+    it 'calls guess with the selected option' do
+      allow(game).to receive(:selection).and_return('1')
+      expect(game).to receive(:guess).with('1')
+      game.play
     end
   end
 
