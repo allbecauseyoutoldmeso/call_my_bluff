@@ -1,9 +1,12 @@
 require 'controller'
 
-describe 'Controller' do
+describe Controller do
 
-  describe '#run_game' do
-    it 'initiates and runs a game' do
+  subject(:controller) { described_class.new }
+
+  describe '#new_game' do
+    it 'initiates a game' do
+      expect(controller.new_game).to be_a(Game)
     end
   end
 
