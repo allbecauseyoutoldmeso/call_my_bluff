@@ -1,3 +1,17 @@
+ENV['RACK_ENV'] = 'test'
+require_relative '../app.rb'
+require 'capybara'
+require 'capybara/rspec'
+require 'rspec'
+
+AppleTree.configure do |app|
+  app.use RackSessionAccess::Middleware
+end
+
+Capybara.app = AppleTree
+
+
+
 RSpec.configure do |config|
 
   config.formatter = 'documentation'
