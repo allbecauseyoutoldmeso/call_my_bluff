@@ -1,10 +1,3 @@
-require './lib/game.rb'
-require './lib/word.rb'
+require './lib/controller.rb'
 
-game = Game.new(Word.new, Word.new, Word.new)
-
-puts game.list_options
-
-selection = gets.chomp
-
-puts game.guess(selection)
+Controller.new.run_game

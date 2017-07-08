@@ -44,4 +44,11 @@ describe Game do
     end
   end
 
+  describe 'play' do
+    it 'gives the user options and returns a win or lose message' do
+      allow(STDIN).to receive(:gets) { '2' }
+      expect {game.play}.to output('Correct!').to_stdout
+    end
+  end
+
 end

@@ -11,11 +11,17 @@ class Game
   end
 
   def list_options
-    "what is the meaning of the word '#{word}'\nis it:\n1. #{options[0]}\n2. #{options[1]}\n3. #{options[2]}"
+    "what is the meaning of the word '#{word}'?\nis it:\n1. #{options[0]}\n2. #{options[1]}\n3. #{options[2]}"
   end
 
   def guess(number)
     options[(number.to_i)-1] == correct_definition ? 'correct!' : "wrong answer. '#{word}' means '#{correct_definition}'"
+  end
+
+  def play
+    puts list_options
+    selection = gets.chomp
+    puts guess(selection)
   end
 
 end
