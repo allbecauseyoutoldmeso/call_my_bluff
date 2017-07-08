@@ -4,7 +4,7 @@
 * Guess which is the correct definition of an obscure word.
 * Uses API requests to *setgetgo.com* and *oxforddictionaries.com* to generate an obscure word and three possible definitions.
 * To play the game clone this repository, navigate into it, and type ``ruby run.rb``.
-* eg:
+* example:
 
 ```
 what is the meaning of the word 'sheugh'?
@@ -14,6 +14,15 @@ is it:
 3. a person who is very knowledgeable about or skilful in a particular area
 3
 wrong answer. 'sheugh' means 'a ditch or furrow'
+play again? y/n
+y
+what is the meaning of the word 'stoush'?
+is it:
+1. an open star cluster in the constellation taurus, appearing to surround the bright star aldebaran.
+2. an old car in poor condition
+3. hit; fight with
+3
+correct!
 play again? y/n
 ```
 

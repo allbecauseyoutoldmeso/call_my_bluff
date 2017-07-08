@@ -14,8 +14,11 @@ class Controller
 
   def play_again_option
     puts 'play again? y/n'
-    answer = gets.chomp.downcase
     answer == 'y' ? run_game : exit
+  end
+
+  def answer
+    gets.chomp.downcase
   end
 
 end
