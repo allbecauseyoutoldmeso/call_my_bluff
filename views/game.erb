@@ -11,11 +11,11 @@
 
   <p id="title">call my bluff</p>
 
-  <p>guess which definition of the word is correct.  the other two are bluffs.</p>
+  <p>what is the meaning of the word '<%=@game.word%>'?</p>
 
-  <form action="/game/new" method="post">
-    <input type="submit" value="play now!"/>
-  </form>
+  <p>1. <%=@game.options[0]%></p>
+  <p>2. <%=@game.options[1]%></p>
+  <p>3. <%=@game.options[2]%></p>
 
 </body>
 
