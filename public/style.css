@@ -1,10 +1,24 @@
 body {
   background-color: #3399ff;
   color: #FCFBE3;
-  font-family: courier;
+  font-family: 'Artifika', serif;
   text-align: center;
 }
 
 #title {
   font-size: 50px;
+}
+
+p {
+ font-size: 20px;  
+}
+
+.bluff-button {
+  background-color: #FCFBE3;
+  border: none;
+  color: #3399ff;
+  font-family: 'Artifika', serif;
+  font-size: 20px;
+  border-radius: 12px;
+  padding: 16px;
 }

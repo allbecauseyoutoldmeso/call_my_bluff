@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-  <link rel="stylesheet" href="/style.css">
-</head>
-
-<body>
-
-  <p id="title">call my bluff</p>
-
   <p><%=@game.guess(@definition)%></p>
 
   <form action="/game/new" method="post">
-    <input type="submit" value="play again!"/>
+    <input class='bluff-button' type="submit" value="play again!"/>
   </form>
-
-</body>
-
-</html>
