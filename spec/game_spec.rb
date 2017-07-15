@@ -40,4 +40,13 @@ describe Game do
     end
   end
 
+  describe '#result' do
+    it 'returns a win message when passed the correct definition' do
+      expect(game.result('a small boat for recreation or racing.')).to eq "correct! 'dinghy' means 'a small boat for recreation or racing.'"
+    end
+    it 'returns a lose message when passed the wrong definition' do
+      expect(game.result('a cup from which tea is drunk.')).to eq "wrong answer. 'dinghy' means 'a small boat for recreation or racing.'"
+    end
+  end
+
 end

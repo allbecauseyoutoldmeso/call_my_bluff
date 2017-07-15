@@ -20,5 +20,9 @@ class CallMyBluff < Sinatra::Base
     erb :game
   end
 
+  get '/game/:guess' do
+    params[:definition]
+  end
+
   run! if app_file == $0
 end
