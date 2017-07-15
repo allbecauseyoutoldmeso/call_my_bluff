@@ -11,7 +11,7 @@
 
 <img width="978" alt="screen shot 2017-07-15 at 17 08 43" src="https://user-images.githubusercontent.com/25392162/28240869-19d76a58-6981-11e7-94e6-797443af606a.png">
 
-<img width="978" alt="screen shot 2017-07-15 at 17 09 43" src="https://user-images.githubusercontent.com/25392162/28240870-1b58a3ce-6981-11e7-88f2-a7d05024ff44.png">
+<img width="974" alt="screen shot 2017-07-15 at 17 30 38" src="https://user-images.githubusercontent.com/25392162/28240990-69e6beac-6983-11e7-87e7-8ef737b4cd73.png">
 
 ### In-console:
 
