@@ -7,11 +7,11 @@ feature 'playing Call My Bluff' do
     expect(page).to have_content 'call my bluff'
   end
 
-  # scenario 'user can start a new game' do
-  #   visit '/'
-  #   click_button 'play now!'
-  #   expect(current_path).to eq '/game'
-  # end
+  scenario 'user can start a new game' do
+    visit '/'
+    click_button 'play now!'
+    expect(current_path).to eq '/game'
+  end
 
   scenario 'game page dispays a word' do
     start_testgame
