@@ -3,8 +3,17 @@
 * Ruby project TDDed using RSpec.
 * Guess which is the correct definition of an obscure word.
 * Uses API requests to *setgetgo.com* and *oxforddictionaries.com* to generate an obscure word and three possible definitions.
-* To play the game clone this repository, navigate into it, and type ``ruby run.rb``.
-* example:
+* Simple Sinatra framework used to create a front end, tested with Capybara/RSpec.
+* Play the game online <a href='http://callmybluff-env.jmyhtktypv.us-east-1.elasticbeanstalk.com/'>here</a>.
+* Or clone this repository, navigate into it, and type ``ruby run.rb`` to play the game in your console.
+
+### Online:
+
+<img width="978" alt="screen shot 2017-07-15 at 17 08 43" src="https://user-images.githubusercontent.com/25392162/28240869-19d76a58-6981-11e7-94e6-797443af606a.png">
+
+<img width="978" alt="screen shot 2017-07-15 at 17 09 43" src="https://user-images.githubusercontent.com/25392162/28240870-1b58a3ce-6981-11e7-88f2-a7d05024ff44.png">
+
+### In-console:
 
 ```
 what is the meaning of the word 'sheugh'?
@@ -25,7 +34,3 @@ is it:
 correct!
 play again? y/n
 ```
-
-### To be improved:
-
-* Needs a front end!
