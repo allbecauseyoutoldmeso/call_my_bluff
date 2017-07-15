@@ -13,7 +13,7 @@ class Game
   end
 
   def guess(number)
-    options[(number.to_i)-1] == correct_definition ? 'correct!' : 'wrong answer. ' + reveal_answer
+    options[(number.to_i)-1] == correct_definition ? 'correct! ' + reveal_answer : 'wrong answer. ' + reveal_answer
   end
 
   def play
@@ -23,10 +23,6 @@ class Game
 
   def selection
     gets.chomp
-  end
-
-  def result(string)
-    string == correct_definition ? 'correct! ' + reveal_answer : 'wrong answer. ' + reveal_answer
   end
 
   def reveal_answer

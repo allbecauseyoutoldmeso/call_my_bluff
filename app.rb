@@ -20,9 +20,9 @@ class CallMyBluff < Sinatra::Base
     erb :game
   end
 
-  get '/game/:guess' do
+  get '/game/:definition' do
     @game = session[:game]
-    @guess = params[:guess]
+    @definition = params[:definition]
     erb :result
   end
 

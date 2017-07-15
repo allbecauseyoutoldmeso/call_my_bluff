@@ -10,7 +10,7 @@
 
   <p id="title">call my bluff</p>
 
-  <p><%=@game.result(@guess)%></p>
+  <p><%=@game.guess(@definition)%></p>
 
   <form action="/game/new" method="post">
     <input type="submit" value="play again!"/>
