@@ -35,4 +35,10 @@ feature 'playing Call My Bluff' do
     expect(page).to have_content "wrong answer. 'teacup' means 'a cup from which tea is drunk.'"
   end
 
+  scenario 'user can opt to play again' do
+    play_testgame_with('attempting stylish elegance.')
+    click_button 'play again!'
+    expect(current_path).to eq '/game'
+  end
+
 end
