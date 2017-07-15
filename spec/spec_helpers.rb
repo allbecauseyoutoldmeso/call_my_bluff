@@ -1,3 +1,8 @@
+def play_testgame_with(selection)
+  start_testgame
+  click_link(selection)
+end
+
 def start_testgame
   page.set_rack_session(game: Game.new(Teacup.new, Dinghy.new, Chichi.new))
   visit '/game'

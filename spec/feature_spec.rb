@@ -26,14 +26,12 @@ feature 'playing Call My Bluff' do
   end
 
   scenario 'win message is displayed if user selects correct definition' do
-    start_testgame
-    click_link 'a cup from which tea is drunk'
+    play_testgame_with('a cup from which tea is drunk')
     expect(page).to have_content "correct! 'teacup' means 'a cup from which tea is drunk.'"
   end
 
   scenario 'lose message is displayed if user selects wrong definition' do
-    start_testgame
-    click_link 'attempting stylish elegance.'
+    play_testgame_with('attempting stylish elegance.')
     expect(page).to have_content "wrong answer. 'teacup' means 'a cup from which tea is drunk.'"
   end
 
