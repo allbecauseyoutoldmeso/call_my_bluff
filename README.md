@@ -4,7 +4,6 @@
 * Guess which is the correct definition of an obscure word.
 * Uses API requests to *setgetgo.com* and *oxforddictionaries.com* to generate an obscure word and three possible definitions.
 * Simple Sinatra framework used to create a front end, tested with Capybara/RSpec.
-* Play the game online <a href='http://callmybluff-env-1.jmyhtktypv.us-east-1.elasticbeanstalk.com'>here</a>.
 * Or clone this repository, navigate into it, and type ``ruby run.rb`` to play the game in your console.
 
 ### Online:
